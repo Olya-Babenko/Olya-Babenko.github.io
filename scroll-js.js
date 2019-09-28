@@ -34,3 +34,16 @@ $(document).ready(function(){
         }, 500);
     });
 });
+
+$(window).scroll(function() {
+  if ($(this).scrollTop()>=400) {
+    // длительность анимации - 'slow'
+    // тип анимации -  'linear'
+    $('.top_button').show('fast', 'linear');
+  }
+  else {
+    // длительность анимации - 'fast'
+    // тип анимации -  'swing'
+    $('.top_button').hide('fast', 'linear');
+  }
+});
