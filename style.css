@@ -303,7 +303,7 @@ h1.main-text {
 }
 
 .card-title {
-	font-family: 'Montserrat'
+	font-family: 'Montserrat', sans-serif;
 }
 
 .circled {
