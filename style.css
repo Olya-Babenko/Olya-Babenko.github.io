@@ -52,7 +52,7 @@ html, body {
 }
 
 .nav-link  {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color:white;
 }
 
@@ -173,6 +173,10 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
 .mont.strawberry {
 	font-weight: bold;
+}
+
+.featurette-text.mont.text-justify {
+	font-size: 18px;
 }
 
 .text-slicer.strawberry {
