@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+
+.mont {
+	font-family: 'Montserrat', sans-serif;
+}
 /*******Befolk Script*******/
 @font-face {
 	font-family: "Befolk";
@@ -7,8 +12,15 @@
 }
 
 .befolk {
+	color: white;
 	font-family: "Befolk";
 	font-size: 50px;
+}
+
+@media screen and (max-width:768px ) {
+	.befolk {
+		font-size: 35px;
+	}
 }
 .befolk-par {
 	font-family: "Befolk", sans-serif;
@@ -20,8 +32,9 @@
 }
 /*******Befolk Script*******/
 
-body {
+html, body {
 	overflow-x: hidden;
+	background: #ffceff;
 }
 
 .navbar {
@@ -36,13 +49,6 @@ body {
 .navbar:hover {
 	background: #ac4181!important;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-@media screen and (max-width: 992px) {
-	.navbar {
-		background: #ac4181!important;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-	}
 }
 
 .nav-link  {
@@ -109,17 +115,23 @@ body {
 
 .sec2 {
 	background: #ffccff;
-	height: 100vh;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
-.wrapper2 {
-	position: absolute;
-	width: 100%;
-	top: 150%;
-	left: 50%;
-	margin-right: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
+.text-slicer.strawberry {
+	border-color: #ac4181;
+}
+
+.strawberry {
+	color: #ac4181;
+}
+
+.smth {
+	border:4px dashed #ac4181;
+	-webkit-clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
+	clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
 }
 
 .bottom-img {
@@ -147,10 +159,10 @@ body {
 
 
 
-.main-text {
-	font-family: 'Raleway', sans-serif;
+h1.main-text {
+	font-size: 2em;
+	font-family: 'Montserrat', sans-serif;
 	color: white;
-	text-shadow: 0 0 10px black;
 }
 
 .purp {
@@ -195,6 +207,17 @@ body {
 	transition: .5s;
 }
 
+.text-slicer {
+	max-width: 15em;
+
+	border-top:3px solid white;
+}
+
+.img-div img {
+	max-width: 12em;
+	transition: .5s;
+}
+
 /*****************************************footer*****************************************/
 .col_white_amrc { 
 	color:white;
@@ -207,17 +230,17 @@ footer {
 	height: 100%; 
 	padding:10px 0px 25px 0px ;
 	z-index: 1000;
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', serif;
 }
 .pt2 { 
-	font-family: 'Lora', serif;
-	font-size: 22px;
+	font-family: 'Montserrat', serif;
+	font-size: 18px;
 	padding-top:40px ; 
 	margin-bottom:20px ;
 }
 
 footer p { 
-	font-size:18px; 
+	font-size:16px; 
 	color:white; 
 	padding-bottom:0px; 
 	margin-bottom:8px;
@@ -375,4 +398,8 @@ footer p {
 
 .com-soc li a:hover {
 	box-shadow:0 0 10px black;
+}
+
+.copyright {
+	font-size: 10pt;
 }
