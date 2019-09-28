@@ -127,6 +127,13 @@ html, body {
 	height: 100%;
 }
 
+.sec4 {
+	background: #ffccff;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
 .card {
 	background: none!important;
 	border:none!important;
@@ -282,6 +289,22 @@ h1.main-text {
 	transition: .5s;
 }
 
+.img-circle {
+	border-radius: 50%;
+	width: 10em;
+}
+
+.comment-card {
+	width: 90%;
+}
+
+.btn-primary {
+	background: #ffccff;
+}
+
+.circled {
+	border-radius: 50%!important;
+}
 /*****************************************footer*****************************************/
 .col_white_amrc { 
 	color:white;

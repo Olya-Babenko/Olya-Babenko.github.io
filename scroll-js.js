@@ -6,14 +6,31 @@ $(function () {
 });
 
 $(document).ready(function(){
-	$("a[href*=#]").on("click", function(e){
+    $(".navbar").on("click","a", function (event) {
 
-	var anchor = $(this);
+        event.preventDefault();
+ 
+        var id  = $(this).attr('href'),
+ 
+            top = $(id).offset().top;
+         
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
 
-	$('html, body').stop().animate({
-		scrollTop: $(anchor.attr('href')).offset().top
-		}, 777);
-		e.preventDefault();
-		return false;
-	});
+    $(".top_button").on("click","a", function (event) {
+
+        event.preventDefault();
+ 
+        var id  = $(this).attr('href'),
+ 
+            top = $(id).offset().top;
+         
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+    $('.nav-link').click(function() {
+        var sectionTo = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(sectionTo).offset().top
+        }, 1500);
+    });
 });
