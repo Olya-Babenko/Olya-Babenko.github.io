@@ -93,6 +93,51 @@ html, body {
 	line-height: 1.5em
 }
 
+.top_button {
+	background-color: #fff;
+	position: fixed;
+	text-align: center;
+	right: 5em;
+	bottom: 5em;
+	border:2px solid #ac4181;
+	border-radius: 50%;
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	transition: .5s;
+	z-index: 9999;
+}
+
+.top_button:hover {
+	transition:.5s;
+	box-shadow: 0 0 10px black;
+}
+
+.top_button i {
+	height: 100%;
+	width: 100%;
+	font-size: 2.5em;
+	color: #ac4181;
+	padding-top: .4em;
+	z-index: 9999;
+	transition:.5s;
+}
+
+.top_button i:hover {
+	animation: bouncing .3s infinite alternate;
+	transition:.5s;
+}
+
+@keyframes bouncing {
+	0% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(-5px);
+	}
+}
+
 .sec1 {
 	
 	background-image: url('images/back.png');
