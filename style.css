@@ -302,8 +302,12 @@ h1.main-text {
 	background: #ffccff;
 }
 
+.card-title {
+	font-family: 'Montserrat'
+}
+
 .circled {
-	border-radius: 50%!important;
+	border-radius: 30px!important;
 }
 /*****************************************footer*****************************************/
 .col_white_amrc { 

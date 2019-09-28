@@ -14,7 +14,7 @@ $(document).ready(function(){
  
             top = $(id).offset().top;
          
-        $('body,html').animate({scrollTop: top}, 1000);
+        $('body,html').animate({scrollTop: top}, 500);
     });
 
     $(".top_button").on("click","a", function (event) {
@@ -25,12 +25,12 @@ $(document).ready(function(){
  
             top = $(id).offset().top;
          
-        $('body,html').animate({scrollTop: top}, 1000);
+        $('body,html').animate({scrollTop: top}, 500);
     });
     $('.nav-link').click(function() {
         var sectionTo = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(sectionTo).offset().top
-        }, 1500);
+        }, 500);
     });
 });
