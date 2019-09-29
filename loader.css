@@ -1,0 +1,110 @@
+.loader {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-color:white;
+    z-index:99999;
+    visibility:visible;
+    animation:hid 1s linear 1 3s;
+    animation-fill-mode:both;
+    
+}
+
+.locked {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+.wrapper{
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    width:100%;
+}
+
+.heading-dv {
+    position:relative;
+    height:35vh;
+    background: url('images/loader-back.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.heading-dv h1 {
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    font-family:"Befolk", sans-serif;
+    color:white;
+    font-size:30px;
+}
+
+.brand {
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-sizer {
+    animation:sizer 2s linear infinite;
+    animation-fill-mode:forwards;
+}
+
+.progress {
+    width:12em;
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, #993399 25%, #b33bb3 25%, #b33bb3 50%, #993399 50%, #993399 75%, #b33bb3 75%, #b33bb3 100%)!important;
+    background-size: 33.94px 33.94px!important;
+}
+
+.progress-bar {
+    width:0;
+    animation:progres 3s linear 1 alternate;
+    animation-fill-mode:forwards;
+}
+
+@keyframes sizer {
+    0% {
+        font-size:35px;
+        
+    }
+    
+    50% {
+        font-size:40px;
+    }
+    
+    100% {
+        font-size:35px;
+    }
+}
+@keyframes progres {
+    0% {
+        width:0%;
+    }
+    100% {
+        width:100%;
+    }
+}
+
+@keyframes hid {
+    0% {
+        opacity:1;
+    }
+
+    45% {
+        opacity:0;
+        visibility:hidden;
+    }
+    100% {
+    	opacity:0;
+        visibility:hidden;
+       z-index:-1;
+    }
+}
