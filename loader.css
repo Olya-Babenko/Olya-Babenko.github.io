@@ -29,7 +29,7 @@
 
 .heading-dv {
     position:relative;
-    height:35vh;
+    height:26em;
     background: url('images/loader-back.png') no-repeat;
     background-size:contain;
     background-position:center;
@@ -85,22 +85,6 @@
     100% {
         font-size:35px;
     }
-}
-
-@media screen and (max-width: 576px) {
-    @keyframes back {
-    0% {
-        background-size:17em 14em;
-    }
-    
-    50% {
-        background-size:21em 16em;
-    }
-    
-    100% {
-        background-size:17em 14em;
-    }
-}
 }
 
 @keyframes back {
