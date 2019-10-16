@@ -158,6 +158,10 @@ html, body {
 	text-align: center;
 }
 
+.wrapper .befolk.pb-3 {
+	transition: .3s linear;
+}
+
 .sec2 {
 	background: #fff;
 	position: relative;
@@ -246,15 +250,17 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	color: #ac4181;
 }
 
+.green {
+	color: green;
+}
+
+.light {
+	color: white;
+}
+
 .text-slicer.strawberry.light {
 	border-width: 2px;
 	max-width: 10em;
-}
-
-.smth {
-	border:4px dashed #ac4181;
-	-webkit-clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
-	clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
 }
 
 .bottom-img {
@@ -286,6 +292,7 @@ h1.main-text {
 	font-size: 2em;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
+	transition: .3s linear;
 }
 
 .purp {
@@ -405,6 +412,39 @@ textarea:focus, :active, :hover{
 textarea.circled {
 	border-radius: 10px!important;
 	overflow-y: hidden;
+}
+.about-ul > li {
+	border-radius: 30px;
+	background: #ac4181;
+	color: white
+}
+.tick > li:before {
+	content: "✓";
+	color:#ac4181;
+	background: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	text-align: center;
+	padding: .25em .45em .25em .45em;
+	font-size: 1em;
+}
+
+#goal {
+	font-size: 70px;
+	color: #ac4181;
+	padding: .5em;
+}
+
+.goal-div {
+	max-width: 80vw;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.join {
+	padding: .75em 1em .75em 1em!important;
+	width: 14em;
+	font-weight: bold!important;
 }
 /*****************************************footer*****************************************/
 .col_white_amrc { 
