@@ -595,3 +595,8 @@ footer p {
 .copyright {
 	font-size: 10pt;
 }
+
+.cont p   {
+	font-family: 'Montserrat', sans-serif;
+	color:white;
+}
